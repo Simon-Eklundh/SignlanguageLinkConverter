@@ -17,11 +17,10 @@ public class SignLanguageConverterController {
 	protected void onAddButtonClick(){
 		String resulting = database.add(input.getText());
 		if(resulting!=null) {
-			current.appendText(resulting);
+			current.appendText(resulting + "\n");
 			input.clear();
 			input.setPromptText("link successfully added");
 		}
-
 	}
 	@FXML
 	protected void onRemoveButtonClick(){

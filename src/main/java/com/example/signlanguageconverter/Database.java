@@ -22,7 +22,7 @@ public class Database {
 				if(result != null)
 					builder.append(result).append("\n");
 			}
-			if(builder.isEmpty()) return null;
+			if(builder.length() == 0) return null;
 			return builder.toString();
 		}else if(text.contains("q=")){
 			String[] codes = text.split("q=")[1].split("%2C");
@@ -33,7 +33,7 @@ public class Database {
 				if(tmp != null)
 					builder.append(tmp).append("\n");
 			}
-			if(builder.isEmpty()) return null;
+			if(builder.length() == 0) return null;
 			return builder.toString();
 		}
 		AbstractMap.SimpleEntry<String ,String> entry = getEntry(text);
@@ -117,7 +117,7 @@ public class Database {
 		return null;
 	}
 
-	private boolean isCodeList(@org.jetbrains.annotations.NotNull String inputlink) {
+	private boolean isCodeList(String inputlink) {
 		if((inputlink.length() + 1) % 6 != 0 || inputlink.length() <= 5){
 			return false;
 		}

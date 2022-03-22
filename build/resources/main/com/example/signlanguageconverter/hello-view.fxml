@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signlanguageconverter.HelloController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signlanguageconverter.SignLanguageConverterController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -16,11 +16,11 @@
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
-            <Label text="write links here" />
+            <Label text="write links or codes here" />
             <HBox prefHeight="100.0" prefWidth="162.0">
                <children>
-                  <TextField />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="add" />
+                  <TextField fx:id="input" />
+                  <Button mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="25.0" prefWidth="74.0" text="add" />
                   <Button mnemonicParsing="false" text="remove" />
                </children>
             </HBox>
@@ -29,7 +29,7 @@
       <Button mnemonicParsing="false" text="convert to lexikon-link" GridPane.rowIndex="2" />
       <Button mnemonicParsing="false" text="convert to import" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="197.0" text="clear" GridPane.columnIndex="1" />
-      <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
-      <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextArea fx:id="current" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <TextArea fx:id="result" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
 </GridPane>

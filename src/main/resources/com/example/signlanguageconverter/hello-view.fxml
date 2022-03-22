@@ -20,15 +20,15 @@
             <HBox prefHeight="100.0" prefWidth="162.0">
                <children>
                   <TextField fx:id="input" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="add" />
-                  <Button mnemonicParsing="false" text="remove" />
+                  <Button mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="25.0" prefWidth="74.0" text="add" />
+                  <Button mnemonicParsing="false" onAction="#onRemoveButtonClick" text="remove" />
                </children>
             </HBox>
          </children>
       </VBox>
-      <Button mnemonicParsing="false" text="convert to lexikon-link" GridPane.rowIndex="2" />
-      <Button mnemonicParsing="false" text="convert to import" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="197.0" text="clear" GridPane.columnIndex="1" />
+      <Button mnemonicParsing="false" onAction="#onConvertToLexikonButtonClick" text="convert to lexikon-link" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#onConvertToImportButtonClick" text="convert to import" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#onRemoveAllDataButtonClick" prefHeight="59.0" prefWidth="197.0" text="Remove all data" GridPane.columnIndex="1" />
       <TextArea fx:id="current" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
       <TextArea fx:id="result" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>

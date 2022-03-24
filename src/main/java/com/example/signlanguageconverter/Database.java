@@ -64,8 +64,8 @@ public class Database {
 		builder.append("{\"name\":\"nameOfQuiz\",\"list\":[");
 		for (Iterator<String> iterator = data.values().iterator(); iterator.hasNext(); ) {
 			String value = iterator.next();
-			builder.append("\"").append(value);
-			if(iterator.hasNext()) builder.append("\"");
+			builder.append("\"").append(value).append("\"");
+			if(iterator.hasNext()) builder.append(",");
 		}
 		builder.append("]}");
 		return builder.toString();

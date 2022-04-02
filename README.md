@@ -44,9 +44,9 @@ The "Remove all data" button removes all added links, resetting the program
 
 # Install instructions:
 
-Make sure you have java 8 https://www.java.com/en/download/manual.jsp installed.
+Make sure you have [java 8](https://www.java.com/en/download/manual.jsp) installed.
 
-Then go to releases https://github.com/Simon-Eklundh/SignlanguageLinkConverter/releases
+Then go to [releases](https://github.com/Simon-Eklundh/SignlanguageLinkConverter/releases)
 and download the latest jar file.
 
 You can then run the program by double clicking it or right clicking and pressing run.

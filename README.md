@@ -16,7 +16,7 @@ A simple converter which converts the following formats into two specific list f
 
 # Usage:
 
-Write the input top left and press add to add it, delete to remove it (doesn't work for the link to a sign list https://teckensprakslexikon.su.se/sok/idnummer?q=00001%2C00002  for these you can use the input of five numbers, or a list of numbers to remove them ).
+Write the input top left and press add to add it, delete to remove it (doesn't work for the link to a sign list https://teckensprakslexikon.su.se/sok/idnummer?q=00001%2C00002  for these you have to add either a link to each word, or the five digit numbers for each word ).
 
 <img width="249" alt="image" src="https://user-images.githubusercontent.com/14080408/160303253-4558b714-cdf6-44f6-9dd7-53f3f7946539.png">
 
